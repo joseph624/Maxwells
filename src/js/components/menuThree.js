@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Compact from './compact';
-import Standard from './standard';
+import SaladMenu from './saladmenu';
 import SectionHeader from './piece/sectionHeader';
 
 
@@ -185,10 +185,10 @@ class MenuTwo extends React.Component {
               </div>
               <div className="row">
                  <div className="col">
-                    <Standard menu={subList}/>
+                    <SaladMenu menu={subList}/>
                  </div>
                  <div className="col">
-                    <Standard menu={saladList}/>
+                    <SaladMenu menu={saladList}/>
                  </div>
                  <div className="col">
                     <div className="row">
