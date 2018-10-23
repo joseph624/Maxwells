@@ -27,20 +27,31 @@ var subList = {items: [
        description: "Four meatballs, mozzarella cheese and pizza sauce",
        price: "6.49"
      },
-     {
-       name: 'PARMESAN CHICKEN SUB',
-       description: "Breaded chicken filet, mozzarella cheese and pizza sauce",
-       price: "6.49"
-     },
+
      {
        name: 'HAM & CHEESE SUB',
        description: "Ham, cheese, lettuce, tomato, mayo",
+       price: "6.49"
+     },
+     {
+       name: 'PIZZA SUB',
+       description: "HUGE deli pepperoni, mozzarella cheese and pizza sauce... great sub to add any pizza topping",
+       price: "5.99"
+     },
+     {
+       name: 'PARMESAN CHICKEN SANDWICH',
+       description: "Breaded chicken, mozzarella cheese and pizza sauce on a kaiser roll",
        price: "6.49"
      }
      ]}
 
      var wrapList = {items: [
-    
+      
+      {
+        name: 'Chipotle Steak Wrap',
+        description: "Shaved steak, Colby jack cheese, lettuce, tomato and chipotle ranch",
+        price: "7.99"
+      },     
       {
         name: 'Buffalo Chicken Wrap',
         description: "Breaded chicken tossed in buffalo sauce with mixed with a Mexican cheese blend, lettuce, tomato and ranch dressing",
@@ -62,12 +73,13 @@ var subList = {items: [
      ]}
 
      var saladList = {items: [
-
-     {
-       name: 'PIZZA SUB',
-       description: "HUGE deli pepperoni, mozzarella cheese and pizza sauce... great sub to add any pizza topping",
-       price: "5.99"
+     
+          {
+       name: 'BUFFALO CHICKEN SANDWICH',
+       description: "breaded chicken tossed in buffalo sauce, provolone cheese, lettuce, tomato, and ranch on a kaiser roll",
+       price: "6.49"
      },
+  
           {
             name: 'salads',
             description: " ",
@@ -76,7 +88,7 @@ var subList = {items: [
           {
            name: 'AVOCADO CHICKEN',
             description: "Avocado, grilled chicken, bacon, tomato, croutons and cheese",
-            price: "7.99"
+            price: "Full 8.99 Half 5.99"
           },
           {
            name: 'PIZZA SALAD',
@@ -100,10 +112,16 @@ var subList = {items: [
            name: 'FIESTA SALAD',
             description: "Our made in house pico, grilled chicken, tortilla straws, mexican cheese and signature fiesta dressing",
             price: "7.99"
+          },
+
+          {
+           name: 'Buffalo Chicken',
+            description: "Breaded chicken tossed in buffalo sauce with mixed with a Mexican cheese blend, bacon, lettuce, tomato",
+            price: "7.99"
           }
           ]}
 
-     var wingList = {items: [
+    /* var wingList = {items: [
 
        {
          name: 'TRADITIONAL OR BONELESS',
@@ -127,6 +145,7 @@ var subList = {items: [
 
 const textArray = [wingList, extraList];
 
+*/
 
 class MenuTwo extends React.Component {
 
@@ -166,7 +185,7 @@ class MenuTwo extends React.Component {
 
   render() {
 
-     let menuSwap = textArray[this.state.currIndex];
+     //let menuSwap = textArray[this.state.currIndex];
       return (
         <div>
         
@@ -196,12 +215,7 @@ class MenuTwo extends React.Component {
                           <Compact menu={wrapList}/>
                        </div>
                     </div>
-                    <div className="row">
-                       <div className="col sub-header">
-                          <SectionHeader title="Wings & Extras" className=""/>
-                          <Compact menu={menuSwap}/>
-                       </div>
-                    </div>
+ 
                  </div>
               </div>
            </div>

@@ -8,34 +8,34 @@ var pizzaListOne = {items: [
       {
         name: 'PEPPERONI & CHEESE',
         description: "Cheese or peperoni",
-        price: "10.49 M / 12.49 L / 15.49 XL",
+        price: "5.99 P / 10.49 M / 12.49 L / 15.49 XL",
 
      },
      {
        name: 'MARGARITA PIZZA',
        description: "Fresh basil, roma tomatoes, and balsamic glaze",
-       price: "10.99 M / 13.99 L / 15.99 XL",
+       price: "5.99 P / 10.99 M / 13.99 L / 15.99 XL",
        featured: true
      },
      {
        name: 'HAWAIIAN PIZZA',
        description: "Honey ham topped with pineapple",
-       price: "10.99 M / 13.99 L / 15.99 XL"
+       price: "5.99 P / 10.99 M / 13.99 L / 15.99 XL"
      },
      {
        name: 'WHITE PIZZA',
        description: "Spinach, onion, tomato and white garlic sauce",
-       price: "10.99 M / 13.99 L / 15.99 XL"
+       price: "5.99 P / 10.99 M / 13.99 L / 15.99 XL"
      },
      {
        name: 'HOT!! PEPPA HAM',
        description: "Mama Lil's hot peppas and spicy capicola ham",
-       price: "12.99 M / 14.99 L / 16.99 XL"
+       price: "5.99 P / 12.99 M / 14.99 L / 16.99 XL"
      },
       {
            name: 'SWEET PEPPER HAM',
             description: "Sweet peppadew peppers and honey baked ham",
-            price: "12.99 M / 14.99 L / 16.99 XL"
+            price: "5.99 P / 12.99 M / 14.99 L / 16.99 XL"
           }
      ]}
 
@@ -44,22 +44,22 @@ var pizzaListOne = {items: [
           {
             name: 'SUPREME PIZZA',
             description: "Pepperoni, sausage, green peppers, mushrooms, onion, black olives",
-            price: "13.99 M / 15.99 L / 17.99 XL"
+            price: "5.99 P / 13.99 M / 15.99 L / 17.99 XL"
           },
           {
             name: 'MEAT LOVERS PIZZA',
             description: "Pepperoni, sausage, ham, bacon",
-            price: "13.99 M / 15.99 L / 17.99 XL"
+            price: "5.99 P / 13.99 M / 15.99 L / 17.99 XL"
           },
           {
             name: 'BBQ CHICKEN PIZZA',
             description: "BBQ Sauce, grilled chicken, bacon and onion",
-            price: "12.99 M / 14.99 L / 16.99 XL"
+            price: "5.99 P / 12.99 M / 14.99 L / 16.99 XL"
           },
           {
             name: 'BUFFALO CHICKEN PIZZA',
             description: "Buffalo sauce, grilled chicken, bacon, with a ranch and buffalo sauce drizzle",
-            price: "13.99 M / 15.99 L / 17.99 XL"
+            price: "5.99 P / 13.99 M / 15.99 L / 17.99 XL"
           },
           {
               name: 'By the slice',
@@ -76,6 +76,12 @@ var pizzaListOne = {items: [
          description: " ",
          helper: true
        },
+       {
+         name: 'PERSONAL',
+         description: "Starts at 5.00",
+         price: "All toppings 0.99/pc"
+       },
+
        {
          name: 'MEDIUM',
          description: "Starts at 8.49",

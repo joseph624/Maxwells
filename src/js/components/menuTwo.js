@@ -28,33 +28,45 @@ var subList = {items: [
        price: "6.49"
      },
      {
-       name: 'PARMESAN CHICKEN SUB',
-       description: "Breaded chicken filet, mozzarella cheese and pizza sauce",
-       price: "6.49"
-     },
-     {
        name: 'HAM & CHEESE SUB',
        description: "Ham, cheese, lettuce, tomato, mayo",
        price: "6.49"
      }
      ]}
 
-     var saladList = {items: [
+     var sandwichList = {items: [
 
+      
+     
      {
        name: 'PIZZA SUB',
        description: "HUGE deli pepperoni, mozzarella cheese and pizza sauce... great sub to add any pizza topping",
        price: "5.99"
      },
           {
-            name: 'salads',
+            name: 'sandwiches',
             description: " ",
             helper: true
           },
           {
+       name: 'PARMESAN CHICKEN ',
+       description: "Breaded chicken filet, mozzarella cheese and pizza sauce on a kaiser roll",
+       price: "6.49"
+     },
+          {
+       name: 'BUFFALO CHICKEN SANDWICH',
+       description: "breaded chicken tossed in buffalo sauce, provolone cheese, lettuce, tomato, and ranch on a kaiser roll",
+       price: "6.49"
+     },
+          ]}
+
+               var saladList = {items: [
+
+ 
+          {
            name: 'AVOCADO CHICKEN',
             description: "Avocado, grilled chicken, bacon, tomato, croutons and cheese",
-            price: "7.99"
+            price: "Full 8.99 Half 5.99"
           },
           {
            name: 'PIZZA SALAD',
@@ -72,33 +84,18 @@ var subList = {items: [
            name: 'FARMHOUSE',
             description: "Cheese, tomato, cucumber, egg, croutons, bacon and ham",
             price: "7.99"
+          },
+
+          {
+           name: 'Buffalo Chicken',
+            description: "Breaded chicken tossed in buffalo sauce with mixed with a Mexican cheese blend, bacon, lettuce, tomato",
+            price: "7.99"
           }
           ]}
 
-     var wingList = {items: [
 
-       {
-         name: 'TRADITIONAL OR BONELESS',
-         description: "BBQ, buffalo, parm garlic, teriyaki, honey gold, asian chili, XTRA hot",
-         price: "6 : 6.99 / 12 : 9.99 / 18 : 18.99"
-       }
-
-          ]}
-    var extraList = {items: [
-
-         {
-          name: 'CHEESY BREAD',
-           description: "6.49"
-         },
-         {
-          name: ' ',
-           description:  " "
-         },
-         {
-          name: 'BIG COOKIE',
-           description:  "3.99"
-         }
-         ]}
+     
+    
 
 
 
@@ -114,11 +111,11 @@ class MenuTwo extends React.Component {
            <div className="container-fluid">
               <div className="row">
                  <div className="col-lg-8">
-                    <SectionHeader title="Subs & Salads" />
+                    <SectionHeader title="Subs & Sandwiches" />
                  </div>
 
                  <div className="col-lg-4">
-                    <SectionHeader title="Wings" />
+                    <SectionHeader title="Salads" />
                  </div>
               </div>
               <div className="row">
@@ -126,20 +123,15 @@ class MenuTwo extends React.Component {
                     <Standard menu={subList}/>
                  </div>
                  <div className="col">
-                    <Standard menu={saladList}/>
+                    <Standard menu={sandwichList}/>
                  </div>
                  <div className="col">
                     <div className="row">
                        <div className="col  pb-5">
-                          <Compact menu={wingList}/>
+                          <Compact menu={saladList}/>
                        </div>
                     </div>
-                    <div className="row">
-                       <div className="col sub-header">
-                          <SectionHeader title="Extras" className=""/>
-                          <Compact menu={extraList}/>
-                       </div>
-                    </div>
+ 
                  </div>
               </div>
            </div>
